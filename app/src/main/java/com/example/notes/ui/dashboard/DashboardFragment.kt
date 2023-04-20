@@ -1,4 +1,4 @@
-package com.example.note.ui.dashboard
+package com.example.notes.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater

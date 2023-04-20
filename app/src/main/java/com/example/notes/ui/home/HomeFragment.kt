@@ -1,4 +1,4 @@
-package com.example.note.ui.home
+package com.example.notes.ui.home
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -7,14 +7,14 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Button
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
-import com.example.note.App
 import com.example.note.R
 import com.example.note.databinding.FragmentHomeBinding
-import com.example.note.model.News
+import com.example.notes.App
+import com.example.notes.model.News
 
 class HomeFragment : Fragment() {
 
@@ -52,6 +52,10 @@ class HomeFragment : Fragment() {
         binding.fab.setOnClickListener {
             findNavController().navigate(R.id.newsFragment)
         }
+        binding.crashButton.setOnClickListener {
+            throw RuntimeException("Test Crash") // Force a crash
+        }
+
 
         parentFragmentManager.setFragmentResultListener(
             "rk_news",

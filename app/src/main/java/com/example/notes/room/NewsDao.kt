@@ -1,7 +1,7 @@
-package com.example.note.room
+package com.example.notes.room
 
 import androidx.room.*
-import com.example.note.model.News
+import com.example.notes.model.News
 
 
 @Dao

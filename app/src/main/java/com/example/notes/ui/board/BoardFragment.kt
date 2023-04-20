@@ -1,4 +1,4 @@
-package com.example.note.ui.board
+package com.example.notes.ui.board
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import androidx.activity.addCallback
 import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
-import com.example.note.Prefs
 import com.example.note.R
 import com.example.note.databinding.FragmentBoardBinding
+import com.example.notes.Prefs
 import me.relex.circleindicator.CircleIndicator3
 
 class BoardFragment : Fragment() {

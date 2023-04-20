@@ -1,4 +1,4 @@
-package com.example.note.ui.home
+package com.example.notes.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

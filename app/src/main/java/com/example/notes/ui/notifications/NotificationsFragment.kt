@@ -1,4 +1,4 @@
-package com.example.note.ui.notifications
+package com.example.notes.ui.notifications
 
 import android.content.Intent
 import android.os.Bundle
@@ -12,8 +12,8 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.note.Prefs
 import com.example.note.databinding.FragmentNotificationsBinding
+import com.example.notes.Prefs
 
 class NotificationsFragment : Fragment() {
 

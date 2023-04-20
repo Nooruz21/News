@@ -1,4 +1,4 @@
-package com.example.note.ui.notifications
+package com.example.notes.ui.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

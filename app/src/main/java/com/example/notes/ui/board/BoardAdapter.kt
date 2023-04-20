@@ -1,4 +1,4 @@
-package com.example.note.ui.board
+package com.example.notes.ui.board
 
 
 import android.content.Context
@@ -7,9 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.NavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.note.Prefs
 import com.example.note.R
 import com.example.note.databinding.ItemBoardBinding
+import com.example.notes.Prefs
 
 
 class BoardAdapter(val context: Context, val navController: NavController) :

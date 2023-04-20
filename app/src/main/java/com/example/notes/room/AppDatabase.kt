@@ -1,8 +1,8 @@
-package com.example.note.room
+package com.example.notes.room
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.note.model.News
+import com.example.notes.model.News
 
 @Database(entities = [News::class], version = 1)
 abstract  class AppDatabase :RoomDatabase(){

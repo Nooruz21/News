@@ -1,11 +1,11 @@
-package com.example.note.ui.home
+package com.example.notes.ui.home
 
 import android.graphics.Color
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.note.databinding.ItemNewsBinding
-import com.example.note.model.News
+import com.example.notes.model.News
 import java.text.SimpleDateFormat
 import java.util.*
 
