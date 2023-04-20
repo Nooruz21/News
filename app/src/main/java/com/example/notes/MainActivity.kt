@@ -15,9 +15,9 @@ import com.example.note.R
 import com.example.note.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.dynamiclinks.DynamicLink
 import com.google.firebase.dynamiclinks.FirebaseDynamicLinks
 import com.google.firebase.dynamiclinks.PendingDynamicLinkData
-import com.google.firebase.ktx.Firebase
 
 class MainActivity : AppCompatActivity() {
 
@@ -76,6 +76,22 @@ class MainActivity : AppCompatActivity() {
                 // content, or apply promotional credit to the user's
                 // account.
                 // ...
+         /*       FirebaseDynamicLinks.getInstance().createDynamicLink().run {
+                    domainUriPrefix = "https://mexx.page.link"
+                    setSocialMetaTagParameters(
+                        DynamicLink.SocialMetaTagParameters.Builder()
+                            .setTitle(it.info.title)
+                            .setDescription(it.price.toString() + " c")
+                            .setImageUrl(it.gallery.first().toUri())
+                            .build()
+                    )
+                    link = ("https://intersport.kg/products?" + it.id).toUri()
+                    buildShortDynamicLink()
+                }.also {
+                    it.addOnSuccessListener { link ->
+                        shareLink.startEvent(link.shortLink.toString())
+                    }
+                }*/
 
             }
             .addOnFailureListener(this) { e ->
